@@ -58,7 +58,7 @@ group by d.promotion_id;
 
 @app.route('/api/v1.0/eshop/<date>', methods=['GET'])
 def get_data(date):
-    conn = sqlite3.connect('/home/suavechallenge/suave_data.db')
+    conn = sqlite3.connect('/home/suadechallenge/suade_data.db')
     c = conn.cursor()
     c.execute(total_items_sql.replace('<date>', date))
     total_items = c.fetchone()
