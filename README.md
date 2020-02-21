@@ -12,4 +12,4 @@ Example eshop API that contains the following data:
 - The average amount of commissions per order for that day.
 - The total amount of commissions earned per promotion that day.
 
-Test using https://suadechallenge.pythonanywhere.com/api/v1.0/eshop/ \<date>
+Test using https://suadechallenge.pythonanywhere.com/api/v1.0/eshop/ \<date> (in the form yyyy-mm-dd)
