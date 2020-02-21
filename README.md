@@ -1,4 +1,4 @@
-# suade-challenge
+# Suade Flask App Coding Challenge
 Flask app for the Suade coding challenge
 
 Example eshop API that contains the following data:
