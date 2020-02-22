@@ -61,19 +61,19 @@ def get_data(date):
     conn = sqlite3.connect('/home/suadechallenge/suade_data.db')
     c = conn.cursor()
     c.execute(total_items_sql.replace('<date>', date))
-    total_items = c.fetchone()
+    total_items = c.fetchone()[0]
     c.execute(total_cust_sql.replace('<date>', date))
-    total_cust = c.fetchone()
+    total_cust = c.fetchone()[0]
     c.execute(total_discount_sql.replace('<date>', date))
-    total_discount = c.fetchone()
+    total_discount = c.fetchone()[0]
     c.execute(avg_discount_sql.replace('<date>', date))
-    avg_discount = c.fetchone()
+    avg_discount = c.fetchone()[0]
     c.execute(avg_total_sql.replace('<date>', date))
-    avg_total = c.fetchone()
+    avg_total = c.fetchone()[0]
     c.execute(total_commission_sql.replace('<date>', date))
-    total_commission = c.fetchone()
+    total_commission = c.fetchone()[0]
     c.execute(average_commission_sql.replace('<date>', date))
-    average_commission = c.fetchone()
+    average_commission = c.fetchone()[0]
 
     data = {}
     data['items'] = total_items
