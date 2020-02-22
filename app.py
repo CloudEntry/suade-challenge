@@ -81,9 +81,9 @@ def get_data(date):
     data['total_discount_amount'] = total_discount
     data['discount_rate_avg'] = avg_discount
     data['order_average'] = avg_total
-    data['total'] = total_commission
 
     commissions = {}
+    commissions['total'] = total_commission
     commissions['average_commission'] = average_commission
 
     promotions = {}
